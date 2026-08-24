@@ -91,6 +91,15 @@ export function HeartIcon({ className = "" }: IconProps) {
   );
 }
 
+export function LeafBranchIcon({ className = "" }: IconProps) {
+  return (
+    <svg viewBox="0 0 120 200" fill="none" stroke="currentColor" strokeWidth="1.4" className={className}>
+      <path strokeLinecap="round" d="M60 200V40" />
+      <path strokeLinecap="round" d="M60 170c-16 0-28-12-28-28M60 170c0-16 12-28 28-28M60 130c-14 0-24-10-24-24M60 130c0-14 10-24 24-24M60 90c-12 0-20-8-20-20M60 90c0-12 8-20 20-20M60 55c-8 0-14-6-14-14" />
+    </svg>
+  );
+}
+
 export function ArrowRightIcon({ className = "" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
