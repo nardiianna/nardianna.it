@@ -7,12 +7,12 @@ export default function Contact() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[auto_1fr_auto_auto]">
         <div className="relative mx-auto h-40 w-40 sm:h-48 sm:w-48">
           <LeafBranchIcon className="absolute -left-10 bottom-0 h-32 w-20 text-pink/50 sm:h-40 sm:w-24" />
-          <div className="absolute inset-0 overflow-hidden rounded-full ring-4 ring-pink/40">
+          <div className="absolute inset-0 overflow-hidden rounded-full">
             <Image
-              src="/images/anna-hero-1.png"
-              alt="Anna Nardi"
-              width={400}
-              height={400}
+              src="/images/logo-circle.png"
+              alt="Nardi Creates"
+              width={800}
+              height={800}
               className="h-full w-full object-cover"
             />
           </div>
