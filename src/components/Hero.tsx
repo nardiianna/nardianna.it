@@ -6,16 +6,14 @@ export default function Hero() {
       <div className="grid gap-12 md:grid-cols-2 md:items-center">
         <div className="relative">
           <div className="absolute -inset-4 -z-10 rounded-2xl border-2 border-pink/40" />
-          <div className="marble-bg flex aspect-[4/5] items-center justify-center rounded-lg p-6 sm:aspect-[5/6]">
-            <Image
-              src="/images/anna-hero-2.png"
-              alt="Anna Nardi"
-              width={2000}
-              height={1044}
-              priority
-              className="w-full rounded-md object-contain"
-            />
-          </div>
+          <Image
+            src="/images/anna-hero-2.png"
+            alt="Anna Nardi"
+            width={2000}
+            height={1044}
+            priority
+            className="w-full rounded-lg object-cover"
+          />
         </div>
 
         <div>
