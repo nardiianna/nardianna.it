@@ -26,8 +26,10 @@ export default function Hero() {
           <p className="mt-6 text-base leading-relaxed text-foreground/80">
             Creo siti web personali e landing page che raccontano chi sei.
             Gestisco la presenza social e digitale di brand e professionisti
-            con strategie su misura. E sviluppo soluzioni digitali e web app
-            personalizzate per esigenze specifiche.
+            con strategie su misura.
+            <br />
+            Sviluppo soluzioni digitali e web app personalizzate per esigenze
+            specifiche.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
