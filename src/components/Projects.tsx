@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRightIcon } from "./icons";
 
 const PROJECTS = [
@@ -6,21 +7,21 @@ const PROJECTS = [
     title: "Presenza Social",
     description: "Gestione della presenza Instagram per un brand di design di prodotto.",
     href: "https://www.instagram.com/magnetica_design/",
-    gradient: "from-[#efe0d3] to-[#e3c9a8]",
+    image: "/images/project-magnetica.png",
   },
   {
     label: "nardifederico.it",
     title: "Sito portfolio",
     description: "Sito portfolio professionale, semplice, raffinato e d'impatto.",
     href: "https://www.nardifederico.it",
-    gradient: "from-[#2b2b2b] to-[#565656]",
+    image: "/images/project-nardifederico.png",
   },
   {
     label: "WhiteTime",
     title: "Web App personalizzata",
     description: "Web app su misura per la pianificazione di contenuti e promemoria.",
     href: "https://whitetime.nardianna.it",
-    gradient: "from-[#f4d7de] to-[#e6a3b0]",
+    image: "/images/project-whitetime.png",
   },
 ];
 
@@ -38,10 +39,14 @@ export default function Projects() {
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           {PROJECTS.map((project) => (
             <div key={project.title} className="text-left">
-              <div
-                className={`flex aspect-[4/3] items-end rounded-xl bg-gradient-to-br p-4 shadow-md ${project.gradient}`}
-              >
-                <span className="rounded-md bg-white/85 px-3 py-1 text-xs font-medium text-foreground/80">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-black/[0.08] shadow-md">
+                <Image
+                  src={project.image}
+                  alt={project.label}
+                  fill
+                  className="object-cover object-top"
+                />
+                <span className="absolute bottom-3 left-3 rounded-md bg-white/90 px-3 py-1 text-xs font-medium text-foreground/80">
                   {project.label}
                 </span>
               </div>
