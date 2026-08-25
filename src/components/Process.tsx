@@ -44,7 +44,7 @@ export default function Process() {
           <div className="absolute left-0 right-0 top-8 hidden h-px bg-pink/30 lg:block" />
           {STEPS.map(({ icon: Icon, number, title, description }) => (
             <div key={number} className="relative flex flex-col items-center">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-pink-soft text-pink-dark ring-1 ring-pink/30">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground text-white">
                 <Icon className="h-7 w-7" />
               </div>
               <p className="mt-4 text-xs font-semibold tracking-widest text-pink-dark">

@@ -37,9 +37,9 @@ export default function Services() {
           {SERVICES.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="rounded-2xl bg-white p-8 text-left shadow-sm shadow-pink/10"
+              className="rounded-2xl border border-black/[0.08] bg-white p-8 text-left shadow-md shadow-black/5"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-soft text-pink-dark">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-white">
                 <Icon className="h-6 w-6" />
               </div>
               <h3 className="mt-6 font-serif text-xl text-foreground">

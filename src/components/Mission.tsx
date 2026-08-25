@@ -16,7 +16,7 @@ export default function Mission() {
           </p>
         </div>
 
-        <div className="rounded-2xl bg-white p-8 shadow-sm shadow-pink/10">
+        <div className="rounded-2xl border border-black/[0.08] bg-white p-8 shadow-md shadow-black/5">
           <svg viewBox="0 0 24 24" fill="currentColor" className="h-8 w-8 text-pink/40">
             <path d="M7.5 6C4.5 6 2 8.5 2 11.5 2 14 4 16 6.5 16c.4 2.3-1 4.3-3 5.4 3.7.4 7-2 7.5-5.9.4-3-1-8-3.5-9.5ZM17 6c-3 0-5.5 2.5-5.5 5.5 0 2.5 2 4.5 4.5 4.5.4 2.3-1 4.3-3 5.4 3.7.4 7-2 7.5-5.9.4-3-1-8-3.5-9.5Z" />
           </svg>
