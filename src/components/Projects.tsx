@@ -2,21 +2,24 @@ import { ArrowRightIcon } from "./icons";
 
 const PROJECTS = [
   {
-    label: "Inclusive Fashion for Everyone",
-    title: "Sito e-commerce",
-    description: "E-commerce moderno e minimal per un brand di abbigliamento inclusivo.",
+    label: "@magnetica_design",
+    title: "Presenza Social",
+    description: "Gestione della presenza Instagram per un brand di design di prodotto.",
+    href: "https://www.instagram.com/magnetica_design/",
     gradient: "from-[#efe0d3] to-[#e3c9a8]",
   },
   {
-    label: "Marco Rossi — Photographer",
+    label: "nardifederico.it",
     title: "Sito portfolio",
-    description: "Portfolio professionale per un fotografo, semplice, raffinato e d'impatto.",
+    description: "Sito portfolio professionale, semplice, raffinato e d'impatto.",
+    href: "https://www.nardifederico.it",
     gradient: "from-[#2b2b2b] to-[#565656]",
   },
   {
-    label: "Dashboard",
+    label: "WhiteTime",
     title: "Web App personalizzata",
-    description: "Web app su misura per la gestione di dati, processi e flussi di lavoro.",
+    description: "Web app su misura per la pianificazione di contenuti e promemoria.",
+    href: "https://whitetime.nardianna.it",
     gradient: "from-[#f4d7de] to-[#e6a3b0]",
   },
 ];
@@ -49,7 +52,9 @@ export default function Projects() {
                 {project.description}
               </p>
               <a
-                href="#contatti"
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium uppercase tracking-wide text-pink-dark hover:text-pink"
               >
                 Scopri di più
