@@ -35,13 +35,13 @@ export default function Contact() {
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="flex flex-col items-center gap-3 text-sm text-foreground/80 md:items-start">
             <a
-              href="mailto:annacreates99@gmail.com"
+              href="mailto:annanardi99@gmail.com"
               className="flex items-center gap-2 hover:text-pink-dark"
             >
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-pink text-white">
                 <MailIcon className="h-4 w-4" />
               </span>
-              annacreates99@gmail.com
+              annanardi99@gmail.com
             </a>
             <a
               href="https://instagram.com/nardicreates"
@@ -57,7 +57,7 @@ export default function Contact() {
           </div>
 
           <a
-            href="mailto:annacreates99@gmail.com"
+            href="mailto:annanardi99@gmail.com"
             className="inline-flex items-center rounded-full bg-pink px-7 py-3 text-sm font-medium uppercase tracking-wide text-white hover:bg-pink-dark transition-colors"
           >
             Contattami
