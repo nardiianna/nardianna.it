@@ -25,7 +25,7 @@ const INCLUDES = [
 
 export default function LaunchPackage() {
   return (
-    <section id="pacchetto-lancio" className="bg-white py-20">
+    <section id="pacchetto-lancio" className="bg-pink-soft py-20">
       <div className="mx-auto max-w-6xl px-6 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-pink-dark">
           Pacchetto lancio
