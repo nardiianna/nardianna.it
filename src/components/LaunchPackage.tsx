@@ -5,7 +5,7 @@ const STATS = [
       "Tempo stimato di lavoro, dalla raccolta dei materiali alla consegna del sito online.",
   },
   {
-    value: "200€",
+    value: "a partire da 200€",
     description:
       "Design, proposta grafica e creazione completa del sito.",
   },
