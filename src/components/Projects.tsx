@@ -9,7 +9,6 @@ const PROJECTS = [
     href: "https://www.instagram.com/magnetica_design/",
     image: "/images/project-magnetica.png",
     objectPosition: "object-[50%_75%]",
-    overlay: true,
   },
   {
     label: "nardifederico.it",
@@ -18,7 +17,6 @@ const PROJECTS = [
     href: "https://www.nardifederico.it",
     image: "/images/project-nardifederico.png",
     objectPosition: "object-top",
-    overlay: false,
   },
   {
     label: "WhiteTime",
@@ -27,7 +25,6 @@ const PROJECTS = [
     href: "https://whitetime.nardianna.it",
     image: "/images/project-whitetime.png",
     objectPosition: "object-center",
-    overlay: false,
   },
 ];
 
@@ -52,9 +49,7 @@ export default function Projects() {
                   fill
                   className={`object-cover ${project.objectPosition}`}
                 />
-                {project.overlay && (
-                  <div className="absolute inset-0 bg-black/35" />
-                )}
+                <div className="absolute inset-0 bg-pink/35" />
                 <span className="absolute bottom-3 left-3 rounded-md bg-white/90 px-3 py-1 text-xs font-medium text-foreground/80">
                   {project.label}
                 </span>
