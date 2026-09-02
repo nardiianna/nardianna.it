@@ -100,6 +100,15 @@ export function LeafBranchIcon({ className = "" }: IconProps) {
   );
 }
 
+export function RefreshIcon({ className = "" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M4 12a8 8 0 0 1 14.3-4.9M20 12a8 8 0 0 1-14.3 4.9" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M18.5 3v4.5H14M5.5 21v-4.5H10" />
+    </svg>
+  );
+}
+
 export function ArrowRightIcon({ className = "" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>

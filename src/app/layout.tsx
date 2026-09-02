@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     "gestione social media",
     "sviluppo web app su misura",
     "presenza digitale professionisti",
+    "manutenzione siti web",
+    "restyling siti web",
   ],
   alternates: {
     canonical: "/",

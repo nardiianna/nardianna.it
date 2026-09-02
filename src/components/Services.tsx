@@ -1,4 +1,4 @@
-import { CodeIcon, MegaphoneIcon, MonitorIcon } from "./icons";
+import { CodeIcon, MegaphoneIcon, MonitorIcon, RefreshIcon } from "./icons";
 
 const SERVICES = [
   {
@@ -19,6 +19,12 @@ const SERVICES = [
     description:
       "Sviluppo soluzioni digitali e web app personalizzate per automatizzare processi, semplificare il lavoro e rispondere a esigenze specifiche.",
   },
+  {
+    icon: RefreshIcon,
+    title: "Manutenzione & Restyling",
+    description:
+      "Aggiorno siti già esistenti con un restyling grafico o nuovi contenuti, e mi occupo della manutenzione continua per mantenerli sempre al passo.",
+  },
 ];
 
 export default function Services() {
@@ -33,7 +39,7 @@ export default function Services() {
           presenza online.
         </h2>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {SERVICES.map(({ icon: Icon, title, description }) => (
             <div
               key={title}

@@ -46,6 +46,13 @@ const structuredData = {
         name: "Soluzioni / App personalizzate",
       },
     },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Manutenzione & Restyling siti web",
+      },
+    },
   ],
 };
 
