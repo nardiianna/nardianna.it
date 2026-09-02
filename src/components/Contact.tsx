@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { InstagramIcon, LeafBranchIcon, MailIcon } from "./icons";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
@@ -56,12 +57,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <a
-            href="mailto:annanardi99@gmail.com"
-            className="inline-flex items-center rounded-full bg-pink px-7 py-3 text-sm font-medium uppercase tracking-wide text-white hover:bg-pink-dark transition-colors"
-          >
-            Contattami
-          </a>
+          <ContactForm />
         </div>
       </div>
     </section>
