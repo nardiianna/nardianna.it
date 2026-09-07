@@ -22,6 +22,14 @@ export async function POST(request: Request) {
     );
   }
 
+  const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (!isValidEmail) {
+    return NextResponse.json(
+      { ok: false, error: "Inserisci un indirizzo email valido." },
+      { status: 400 },
+    );
+  }
+
   const gmailUser = process.env.GMAIL_USER;
   const gmailAppPassword = process.env.GMAIL_APP_PASSWORD;
   const contactTo = process.env.CONTACT_TO_EMAIL ?? "annanardi99@gmail.com";
