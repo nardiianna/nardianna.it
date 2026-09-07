@@ -58,21 +58,35 @@ export default function ContactForm() {
         aria-hidden="true"
       />
 
+      <label htmlFor="contact-name" className="sr-only">
+        Nome
+      </label>
       <input
+        id="contact-name"
         type="text"
         name="name"
         placeholder="Nome"
         required
         className="rounded-full border border-foreground/15 bg-white px-5 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-pink focus:outline-none"
       />
+
+      <label htmlFor="contact-email" className="sr-only">
+        Email
+      </label>
       <input
+        id="contact-email"
         type="email"
         name="email"
         placeholder="Email"
         required
         className="rounded-full border border-foreground/15 bg-white px-5 py-2.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-pink focus:outline-none"
       />
+
+      <label htmlFor="contact-message" className="sr-only">
+        Messaggio
+      </label>
       <textarea
+        id="contact-message"
         name="message"
         placeholder="Raccontami la tua idea..."
         required
