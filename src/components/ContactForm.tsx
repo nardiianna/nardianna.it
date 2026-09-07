@@ -88,6 +88,14 @@ export default function ContactForm() {
         {status === "sending" ? "Invio in corso..." : "Invia richiesta"}
       </button>
 
+      <p className="text-xs text-foreground/50">
+        Inviando il modulo accetti la{" "}
+        <a href="/privacy" className="underline hover:text-pink-dark">
+          Privacy Policy
+        </a>
+        .
+      </p>
+
       {status === "error" && (
         <p className="text-sm text-pink-dark">{errorMessage}</p>
       )}
