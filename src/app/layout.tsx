@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import Script from "next/script";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-JKQNR2F3XH";
@@ -68,19 +69,43 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${playfair.variable} ${poppins.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'wait_for_update': 500
+            });
+            try {
+              var stored = JSON.parse(localStorage.getItem('cookie_consent'));
+              if (stored) {
+                gtag('consent', 'update', {
+                  'analytics_storage': stored.analytics ? 'granted' : 'denied',
+                  'ad_storage': stored.ads ? 'granted' : 'denied',
+                  'ad_user_data': stored.ads ? 'granted' : 'denied',
+                  'ad_personalization': stored.ads ? 'granted' : 'denied'
+                });
+              }
+            } catch (e) {}
+          `}
+        </Script>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
         {children}
+        <CookieBanner />
       </body>
     </html>
   );

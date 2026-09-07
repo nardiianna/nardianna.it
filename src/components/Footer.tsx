@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import CookieSettingsButton from "./CookieSettingsButton";
 
 const LINKS = [
   { href: "#home", label: "Home" },
@@ -24,9 +25,18 @@ export default function Footer() {
           ))}
         </nav>
 
-        <p className="text-xs text-foreground/50">
-          © {new Date().getFullYear()} Nardi Creates. Tutti i diritti riservati.
-        </p>
+        <div className="flex flex-col items-center gap-2 text-xs text-foreground/50 md:items-end">
+          <p>
+            © {new Date().getFullYear()} Nardi Creates. Tutti i diritti
+            riservati.
+          </p>
+          <div className="flex gap-4">
+            <a href="/privacy" className="underline hover:text-pink-dark">
+              Privacy &amp; Cookie
+            </a>
+            <CookieSettingsButton />
+          </div>
+        </div>
       </div>
     </footer>
   );
