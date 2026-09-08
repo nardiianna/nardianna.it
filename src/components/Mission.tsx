@@ -6,13 +6,13 @@ export default function Mission() {
       <div className="mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
         <div>
           <h2 className="font-serif text-3xl text-foreground sm:text-4xl">
-            Distinguersi nel digitale: la mia missione
+            Un sito che ti rappresenta davvero
           </h2>
           <p className="mt-6 text-base leading-relaxed text-foreground/80">
-            Sono <strong className="font-semibold">Anna Nardi</strong>, digital
-            strategist e web designer. Aiuto piccole attività, professionisti e
-            personal brand a comunicare il proprio valore online con
-            creatività, strategia e soluzioni digitali su misura.
+            Sono <strong className="font-semibold">Anna Nardi</strong>, web
+            designer specializzata nella creazione di siti web. Aiuto piccole
+            attività, professionisti e personal brand a raccontarsi online con
+            un sito curato, chiaro e fatto su misura.
           </p>
         </div>
 

@@ -18,18 +18,18 @@ export default function Hero() {
 
         <div>
           <h1 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-            Creatività, strategia e digitale.
+            Il tuo sito web,
             <br />
-            <span className="text-pink italic">Su misura per te.</span>
+            <span className="text-pink italic">fatto su misura per te.</span>
           </h1>
 
           <p className="mt-6 text-base leading-relaxed text-foreground/80">
-            Creo siti web personali e landing page che raccontano chi sei.
-            Gestisco la presenza social e digitale di brand e professionisti
-            con strategie su misura.
+            Creo siti personali e landing page che raccontano davvero chi sei,
+            curati nel design e nello sviluppo, dal primo pixel alla
+            pubblicazione.
             <br />
-            Sviluppo soluzioni digitali e web app personalizzate per esigenze
-            specifiche.
+            Mi occupo anche di restyling e manutenzione per siti già
+            esistenti.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -43,7 +43,7 @@ export default function Hero() {
               href="#progetti"
               className="rounded-full border border-foreground/30 px-7 py-3 text-sm font-medium uppercase tracking-wide text-foreground hover:border-pink hover:text-pink-dark transition-colors"
             >
-              Vedi i progetti
+              Vedi il progetto
             </a>
           </div>
         </div>

@@ -16,13 +16,12 @@ const structuredData = {
   url: "https://nardianna.it",
   image: "https://nardianna.it/images/anna-hero-2.png",
   email: "annanardi99@gmail.com",
-  jobTitle: "Web Designer & Digital Strategist",
+  jobTitle: "Web Designer specializzata in siti web",
   sameAs: ["https://instagram.com/nardicreates"],
   knowsAbout: [
     "Creazione siti web",
     "Landing page",
-    "Gestione social media",
-    "Sviluppo web app su misura",
+    "Restyling e manutenzione siti web",
   ],
   makesOffer: [
     {
@@ -30,20 +29,6 @@ const structuredData = {
       itemOffered: {
         "@type": "Service",
         name: "Siti personali & Landing Page",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Presenza Social & Digitale",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Soluzioni / App personalizzate",
       },
     },
     {

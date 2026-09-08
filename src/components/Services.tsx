@@ -1,4 +1,4 @@
-import { CodeIcon, MegaphoneIcon, MonitorIcon, RefreshIcon } from "./icons";
+import { MonitorIcon, RefreshIcon } from "./icons";
 
 const SERVICES = [
   {
@@ -8,22 +8,10 @@ const SERVICES = [
       "Creo siti web moderni, eleganti e responsive che valorizzano la tua immagine e parlano al tuo pubblico. Perfetti per presentarti al meglio e raggiungere i tuoi obiettivi.",
   },
   {
-    icon: MegaphoneIcon,
-    title: "Presenza Social & Digitale",
-    description:
-      "Gestisco i tuoi social e la tua presenza digitale con strategie su misura, contenuti efficaci e una comunicazione coerente che fa crescere la tua visibilità.",
-  },
-  {
-    icon: CodeIcon,
-    title: "Soluzioni / App personalizzate",
-    description:
-      "Sviluppo soluzioni digitali e web app personalizzate per automatizzare processi, semplificare il lavoro e rispondere a esigenze specifiche.",
-  },
-  {
     icon: RefreshIcon,
-    title: "Manutenzione & Restyling",
+    title: "Restyling & Manutenzione",
     description:
-      "Aggiorno siti già esistenti con un restyling grafico o nuovi contenuti, e mi occupo della manutenzione continua per mantenerli sempre al passo.",
+      "Rinnovo siti già esistenti con un restyling grafico o nuovi contenuti, e mi occupo della manutenzione continua per mantenerli sempre al passo.",
   },
 ];
 
@@ -35,11 +23,10 @@ export default function Services() {
           I miei servizi
         </p>
         <h2 className="mx-auto mt-3 max-w-2xl font-serif text-3xl text-foreground sm:text-4xl">
-          Soluzioni digitali su misura per far crescere il tuo brand e la tua
-          presenza online.
+          Siti web curati nei dettagli, pensati per farti crescere online.
         </h2>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+        <div className="mx-auto mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
           {SERVICES.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
@@ -57,6 +44,11 @@ export default function Services() {
             </div>
           ))}
         </div>
+
+        <p className="mx-auto mt-10 max-w-2xl text-sm text-foreground/60">
+          Su richiesta mi occupo anche di gestione social e di soluzioni
+          digitali personalizzate.
+        </p>
       </div>
     </section>
   );
