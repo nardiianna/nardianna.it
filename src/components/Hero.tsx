@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section id="home" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
       <div className="grid gap-12 md:grid-cols-2 md:items-center">
-        <div className="relative">
-          <div className="absolute -inset-4 -z-10 rounded-2xl border-2 border-pink/40" />
+        <div className="hero-fade-in relative">
+          <div className="hero-fade-in absolute -inset-4 -z-10 rounded-2xl border-2 border-pink/40 [animation-delay:400ms]" />
           <Image
             src="/images/anna-hero-2.png"
             alt="Anna Nardi"
@@ -17,13 +17,13 @@ export default function Hero() {
         </div>
 
         <div>
-          <h1 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">
+          <h1 className="hero-fade-up font-serif text-4xl leading-tight text-foreground sm:text-5xl">
             Il tuo sito web,
             <br />
             <span className="text-pink italic">fatto su misura per te.</span>
           </h1>
 
-          <p className="mt-6 text-base leading-relaxed text-foreground/80">
+          <p className="hero-fade-up mt-6 text-base [animation-delay:150ms] leading-relaxed text-foreground/80">
             Creo siti personali e landing page che raccontano davvero chi sei,
             curati nel design e nello sviluppo, dal primo pixel alla
             pubblicazione.
@@ -32,7 +32,7 @@ export default function Hero() {
             esistenti.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="hero-fade-up mt-8 flex flex-wrap gap-4 [animation-delay:300ms]">
             <a
               href="#servizi"
               className="rounded-full bg-pink px-7 py-3 text-sm font-medium uppercase tracking-wide text-white hover:bg-pink-dark transition-colors"

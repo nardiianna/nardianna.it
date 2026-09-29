@@ -7,6 +7,7 @@ import Process from "@/components/Process";
 import LaunchPackage from "@/components/LaunchPackage";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -59,6 +60,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <ScrollReveal />
     </>
   );
 }
