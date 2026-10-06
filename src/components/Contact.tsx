@@ -35,12 +35,8 @@ export default function Contact() {
             Chiamami, scrivimi su WhatsApp o compila il modulo: ti rispondo il
             prima possibile con un preventivo gratuito e senza impegno.
           </p>
-        </div>
 
-        <div className="hidden h-32 w-px bg-foreground/15 md:block" />
-
-        <div className="flex flex-col items-center gap-4 md:items-start">
-          <div className="flex flex-col items-center gap-3 text-sm text-foreground/80 md:items-start">
+          <div className="mx-auto mt-6 grid w-fit gap-x-8 gap-y-3 text-sm text-foreground/80 sm:grid-cols-2 md:mx-0">
             <a
               href="tel:+393496866877"
               className="flex items-center gap-2 hover:text-pink-dark"
@@ -82,7 +78,11 @@ export default function Contact() {
               @nardicreates
             </a>
           </div>
+        </div>
 
+        <div className="hidden h-32 w-px bg-foreground/15 md:block" />
+
+        <div className="flex flex-col items-center gap-4 md:items-start">
           <ContactForm />
         </div>
       </div>
