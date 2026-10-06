@@ -5,6 +5,19 @@ export type ConsentState = {
 
 const STORAGE_KEY = "cookie_consent";
 
+const listeners = new Set<() => void>();
+
+function notifyListeners() {
+  listeners.forEach((listener) => listener());
+}
+
+export function subscribeConsent(listener: () => void) {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -23,11 +36,19 @@ export function getStoredConsent(): ConsentState | null {
 }
 
 export function storeConsent(consent: ConsentState) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+  } catch {
+    // Storage unavailable (e.g. private mode): consent applies to this visit only.
+  }
+  notifyListeners();
 }
 
 export function clearConsent() {
-  window.localStorage.removeItem(STORAGE_KEY);
+  try {
+    window.localStorage.removeItem(STORAGE_KEY);
+  } catch {}
+  notifyListeners();
 }
 
 export function applyConsent(consent: ConsentState) {

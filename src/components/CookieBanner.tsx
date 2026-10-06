@@ -1,18 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { applyConsent, getStoredConsent, storeConsent } from "@/lib/consent";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import {
+  applyConsent,
+  getStoredConsent,
+  storeConsent,
+  subscribeConsent,
+} from "@/lib/consent";
 
 export const OPEN_COOKIE_SETTINGS_EVENT = "open-cookie-settings";
 
 export default function CookieBanner() {
-  const [visible, setVisible] = useState(false);
+  // Server render assumes consent is stored, so the banner only appears after hydration.
+  const hasConsent = useSyncExternalStore(
+    subscribeConsent,
+    () => getStoredConsent() !== null,
+    () => true,
+  );
+  // "open" from the footer button, "closed" after a choice; null follows stored consent.
+  const [override, setOverride] = useState<"open" | "closed" | null>(null);
 
   useEffect(() => {
-    setVisible(getStoredConsent() === null);
-
     function handleOpen() {
-      setVisible(true);
+      setOverride("open");
     }
 
     window.addEventListener(OPEN_COOKIE_SETTINGS_EVENT, handleOpen);
@@ -24,9 +34,10 @@ export default function CookieBanner() {
     const consent = { analytics, ads: analytics };
     storeConsent(consent);
     applyConsent(consent);
-    setVisible(false);
+    setOverride("closed");
   }
 
+  const visible = override === null ? !hasConsent : override === "open";
   if (!visible) return null;
 
   return (
