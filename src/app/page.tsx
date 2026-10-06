@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
 import Mission from "@/components/Mission";
-import Process from "@/components/Process";
+import Faq, { FAQS } from "@/components/Faq";
 import LaunchPackage from "@/components/LaunchPackage";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -17,19 +17,21 @@ const structuredData = {
   url: "https://nardianna.it",
   image: "https://nardianna.it/images/anna-hero-2.png",
   email: "annanardi99@gmail.com",
-  jobTitle: "Web Designer specializzata in siti web",
+  telephone: "+39 349 686 6877",
+  jobTitle: "Web Designer freelance",
   sameAs: ["https://instagram.com/nardicreates"],
   knowsAbout: [
     "Creazione siti web",
     "Landing page",
     "Restyling e manutenzione siti web",
+    "WordPress",
   ],
   makesOffer: [
     {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: "Siti personali & Landing Page",
+        name: "Creazione siti web e landing page",
       },
     },
     {
@@ -42,6 +44,16 @@ const structuredData = {
   ],
 };
 
+const faqData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map(({ question, answer }) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
+};
+
 export default function Home() {
   return (
     <>
@@ -49,14 +61,18 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
       <Header />
       <main className="flex-1">
         <Hero />
         <Services />
         <Projects />
         <Mission />
-        <Process />
         <LaunchPackage />
+        <Faq />
         <Contact />
       </main>
       <Footer />

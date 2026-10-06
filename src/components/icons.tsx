@@ -26,44 +26,6 @@ export function CodeIcon({ className = "" }: IconProps) {
   );
 }
 
-export function EarIcon({ className = "" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 17c-2.5-1-4-3.3-4-6a7 7 0 1 1 11 5.7c-.8.6-1 1.1-1 2.3v.5a2.5 2.5 0 0 1-5 0" />
-      <path strokeLinecap="round" d="M10.5 11a1.8 1.8 0 1 1 3 1.3" />
-    </svg>
-  );
-}
-
-export function TargetIcon({ className = "" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
-      <circle cx="12" cy="12" r="8" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="12" cy="12" r="0.6" fill="currentColor" />
-    </svg>
-  );
-}
-
-export function PencilIcon({ className = "" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4 20l1-4.2L15.8 5 19 8.2 8.2 19 4 20Z" />
-      <path strokeLinecap="round" d="M13.5 6.7 17.3 10.5" />
-    </svg>
-  );
-}
-
-export function RocketIcon({ className = "" }: IconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c3 1 5 4 5 8 0 2-1 4-2 5l-3 2-3-2c-1-1-2-3-2-5 0-4 2-7 5-8Z" />
-      <path strokeLinecap="round" d="M9 16l-2.5 1.5L7 14M15 16l2.5 1.5L17 14" />
-      <circle cx="12" cy="10" r="1.4" />
-    </svg>
-  );
-}
-
 export function MailIcon({ className = "" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
@@ -113,6 +75,23 @@ export function ArrowRightIcon({ className = "" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M4 12h16M13 5l7 7-7 7" />
+    </svg>
+  );
+}
+
+export function PhoneIcon({ className = "" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 4h3.5l1.5 4-2 1.5a11 11 0 0 0 6.5 6.5L16 14l4 1.5V19a1.5 1.5 0 0 1-1.5 1.5A15.5 15.5 0 0 1 3.5 5.5 1.5 1.5 0 0 1 5 4Z" />
+    </svg>
+  );
+}
+
+export function WhatsAppIcon({ className = "" }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M4 20l1.2-3.6A8 8 0 1 1 8 19.1L4 20Z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.2 8.8c0 3 2.5 5.8 5.8 6l1-1.2-1.6-.9-.7.7a4.4 4.4 0 0 1-2.3-2.3l.7-.7-.9-1.6-1.2 1Z" />
     </svg>
   );
 }

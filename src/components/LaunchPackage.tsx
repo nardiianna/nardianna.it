@@ -5,14 +5,14 @@ const STATS = [
       "Tempo stimato di lavoro, dalla raccolta dei materiali alla consegna del sito online.",
   },
   {
-    value: "a partire da 200€",
+    value: "Bozza prima",
     description:
-      "Design, proposta grafica e creazione completa del sito.",
+      "Vedi la proposta grafica prima dello sviluppo, così sai subito dove stiamo andando.",
   },
   {
-    value: "79€ + IVA",
+    value: "Preventivo gratuito",
     description:
-      "Dominio e hosting Aruba per il primo anno (costo esterno).",
+      "Costi chiari e concordati prima di iniziare, dominio e hosting compresi.",
   },
 ];
 

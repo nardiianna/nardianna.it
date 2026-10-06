@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { InstagramIcon, LeafBranchIcon, MailIcon } from "./icons";
+import {
+  InstagramIcon,
+  LeafBranchIcon,
+  MailIcon,
+  PhoneIcon,
+  WhatsAppIcon,
+} from "./icons";
 import ContactForm from "./ContactForm";
 
 export default function Contact() {
@@ -26,8 +32,8 @@ export default function Contact() {
             <span className="text-pink italic">Parliamone.</span>
           </h2>
           <p className="mt-4 max-w-md text-base text-foreground/80 md:mx-0 mx-auto">
-            Scrivimi e raccontami la tua idea: insieme la trasformeremo in
-            realtà.
+            Chiamami, scrivimi su WhatsApp o compila il modulo: ti rispondo il
+            prima possibile con un preventivo gratuito e senza impegno.
           </p>
         </div>
 
@@ -35,6 +41,26 @@ export default function Contact() {
 
         <div className="flex flex-col items-center gap-4 md:items-start">
           <div className="flex flex-col items-center gap-3 text-sm text-foreground/80 md:items-start">
+            <a
+              href="tel:+393496866877"
+              className="flex items-center gap-2 hover:text-pink-dark"
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-pink text-white">
+                <PhoneIcon className="h-4 w-4" />
+              </span>
+              349 686 6877
+            </a>
+            <a
+              href="https://wa.me/393496866877"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-pink-dark"
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-pink text-white">
+                <WhatsAppIcon className="h-4 w-4" />
+              </span>
+              Scrivimi su WhatsApp
+            </a>
             <a
               href="mailto:annanardi99@gmail.com"
               className="flex items-center gap-2 hover:text-pink-dark"

@@ -20,18 +20,18 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nardianna.it"),
-  title: "Nardi Creates | Anna Nardi — Web Design & Strategia Digitale",
+  title: "Creazione Siti Web su Misura | Anna Nardi — Nardi Creates",
   description:
-    "Creo siti web personali e landing page, gestisco presenza social e digitale, sviluppo soluzioni digitali su misura per brand e professionisti.",
+    "Web designer freelance: creo siti web su misura e landing page per piccole attività e professionisti, con restyling e manutenzione. Preventivo gratuito.",
   keywords: [
     "creazione siti web",
+    "sito web su misura",
     "web designer freelance",
-    "landing page personalizzata",
-    "gestione social media",
-    "sviluppo web app su misura",
-    "presenza digitale professionisti",
-    "manutenzione siti web",
-    "restyling siti web",
+    "sito vetrina per attività",
+    "landing page",
+    "restyling sito web",
+    "manutenzione sito WordPress",
+    "sito web per professionisti",
   ],
   alternates: {
     canonical: "/",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: "it_IT",
     url: "https://nardianna.it",
     siteName: "Nardi Creates",
-    title: "Nardi Creates | Anna Nardi — Web Design & Strategia Digitale",
+    title: "Creazione Siti Web su Misura | Anna Nardi — Nardi Creates",
     description:
-      "Creo siti web personali e landing page, gestisco presenza social e digitale, sviluppo soluzioni digitali su misura per brand e professionisti.",
+      "Web designer freelance: creo siti web su misura e landing page per piccole attività e professionisti, con restyling e manutenzione. Preventivo gratuito.",
     images: [
       {
         url: "/images/anna-hero-2.png",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nardi Creates | Anna Nardi — Web Design & Strategia Digitale",
+    title: "Creazione Siti Web su Misura | Anna Nardi — Nardi Creates",
     description:
-      "Creo siti web personali e landing page, gestisco presenza social e digitale, sviluppo soluzioni digitali su misura per brand e professionisti.",
+      "Web designer freelance: creo siti web su misura e landing page per piccole attività e professionisti, con restyling e manutenzione. Preventivo gratuito.",
     images: ["/images/anna-hero-2.png"],
   },
 };

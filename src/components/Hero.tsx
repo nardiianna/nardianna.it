@@ -43,7 +43,7 @@ export default function Hero() {
               href="#progetti"
               className="rounded-full border border-foreground/30 px-7 py-3 text-sm font-medium uppercase tracking-wide text-foreground hover:border-pink hover:text-pink-dark transition-colors"
             >
-              Vedi il progetto
+              Vedi i progetti
             </a>
           </div>
         </div>

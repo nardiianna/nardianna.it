@@ -12,7 +12,9 @@ export default function Mission() {
             Sono <strong className="font-semibold">Anna Nardi</strong>, web
             designer specializzata nella creazione di siti web. Aiuto piccole
             attività, professionisti e personal brand a raccontarsi online con
-            un sito curato, chiaro e fatto su misura.
+            un sito curato, chiaro e fatto su misura. Lavori direttamente con
+            me, dalla prima chiamata alla pubblicazione, senza passaggi tra
+            intermediari.
           </p>
         </div>
 
@@ -21,9 +23,8 @@ export default function Mission() {
             <path d="M7.5 6C4.5 6 2 8.5 2 11.5 2 14 4 16 6.5 16c.4 2.3-1 4.3-3 5.4 3.7.4 7-2 7.5-5.9.4-3-1-8-3.5-9.5ZM17 6c-3 0-5.5 2.5-5.5 5.5 0 2.5 2 4.5 4.5 4.5.4 2.3-1 4.3-3 5.4 3.7.4 7-2 7.5-5.9.4-3-1-8-3.5-9.5Z" />
           </svg>
           <p className="mt-4 font-serif text-xl italic leading-relaxed text-foreground">
-            Il mio obiettivo è supportare chi vuole distinguersi, crescere e
-            brillare nel digitale, trasformando idee in progetti concreti e
-            risultati misurabili.
+            Un sito non deve solo essere bello: deve far capire in pochi
+            secondi chi sei, cosa offri e come contattarti.
           </p>
           <HeartIcon className="mt-4 h-5 w-5 text-pink" />
         </div>
