@@ -11,6 +11,14 @@ const PROJECTS = [
     image: "/images/project-nardifederico.png",
   },
   {
+    label: "academyvillage.it",
+    title: "Centro sportivo",
+    description:
+      "Sito per un centro sportivo con campi, tornei e scuola calcio, con prenotazione dei campi online integrata direttamente nella pagina.",
+    href: "https://www.academyvillage.it",
+    image: "/images/project-academyvillage.png",
+  },
+  {
     label: "epilsystem.it",
     title: "Centro di fotoepilazione",
     description:
@@ -47,21 +55,21 @@ export default function Projects() {
           Design su misura, dal primo pixel alla pubblicazione.
         </h2>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 flex flex-wrap justify-center gap-6">
           {PROJECTS.map((project) => (
             <a
               key={project.label}
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col overflow-hidden rounded-2xl border border-black/[0.08] bg-white text-left shadow-md shadow-black/5 transition hover:-translate-y-1 hover:shadow-lg"
+              className="group flex w-full flex-col overflow-hidden sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] rounded-2xl border border-black/[0.08] bg-white text-left shadow-md shadow-black/5 transition hover:-translate-y-1 hover:shadow-lg"
             >
               <div className="relative aspect-[4/3] overflow-hidden border-b border-black/[0.06]">
                 <Image
                   src={project.image}
                   alt={project.label}
                   fill
-                  sizes="(min-width: 1024px) 270px, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 370px, (min-width: 640px) 50vw, 100vw"
                   className="object-cover object-top transition duration-500 group-hover:scale-105"
                 />
               </div>
