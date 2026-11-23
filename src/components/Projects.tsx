@@ -2,50 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowLeftIcon, ArrowRightIcon } from "./icons";
-
-const PROJECTS = [
-  {
-    label: "nardifederico.it",
-    title: "Sito portfolio",
-    description:
-      "Sito portfolio professionale, semplice, raffinato e d'impatto — progettato e sviluppato su misura, dal design alla pubblicazione.",
-    href: "https://www.nardifederico.it",
-    image: "/images/project-nardifederico.png",
-  },
-  {
-    label: "academyvillage.it",
-    title: "Centro sportivo",
-    description:
-      "Sito per un centro sportivo con campi, tornei e scuola calcio, con prenotazione dei campi online integrata direttamente nella pagina.",
-    href: "https://www.academyvillage.it",
-    image: "/images/project-academyvillage.png",
-  },
-  {
-    label: "epilsystem.it",
-    title: "Centro di fotoepilazione",
-    description:
-      "Sito per un centro specializzato in fotoepilazione laser: presenta metodo, sedi e fondatori e porta le persone a prenotare una consulenza.",
-    href: "https://www.epilsystem.it",
-    image: "/images/project-epilsystem.png",
-  },
-  {
-    label: "samanthabeautyboutique.it",
-    title: "Centro estetico",
-    description:
-      "Sito vetrina per centro estetico, pensato per presentare trattamenti e prodotti e facilitare la prenotazione online.",
-    href: "https://www.samanthabeautyboutique.it",
-    image: "/images/project-beautyboutique.png",
-  },
-  {
-    label: "praticaenea.nardifederico.it",
-    title: "Gestione pratiche ENEA",
-    description:
-      "Sito di servizio per la gestione delle pratiche ENEA aziendali, dalla richiesta informazioni all'area riservata partner.",
-    href: "https://praticaenea.nardifederico.it",
-    image: "/images/project-praticaenea.png",
-  },
-];
+import { PROJECTS } from "@/lib/projects";
 
 export default function Projects() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -148,6 +107,14 @@ export default function Projects() {
             <ArrowRightIcon className="h-4 w-4" />
           </button>
         </div>
+
+        <Link
+          href="/progetti"
+          className="mt-10 inline-flex items-center gap-2 rounded-full border border-pink px-6 py-2.5 text-sm font-medium uppercase tracking-wide text-pink-dark transition-colors hover:bg-pink hover:text-white"
+        >
+          Vedi tutti i progetti
+          <ArrowRightIcon className="h-3.5 w-3.5" />
+        </Link>
       </div>
     </section>
   );

@@ -2,12 +2,12 @@ import Logo from "./Logo";
 import CookieSettingsButton from "./CookieSettingsButton";
 
 const LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#progetti", label: "Progetti" },
-  { href: "#chi-sono", label: "Chi sono" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/#home", label: "Home" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/progetti", label: "Progetti" },
+  { href: "/#chi-sono", label: "Chi sono" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contatti", label: "Contatti" },
 ];
 
 export default function Footer() {

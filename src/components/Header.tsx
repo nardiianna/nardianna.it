@@ -1,16 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#servizi", label: "Servizi" },
-  { href: "#progetti", label: "Progetti" },
-  { href: "#chi-sono", label: "Chi sono" },
-  { href: "#pacchetto-lancio", label: "Pacchetto lancio" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contatti", label: "Contatti" },
+  { href: "/#home", label: "Home" },
+  { href: "/#servizi", label: "Servizi" },
+  { href: "/progetti", label: "Progetti" },
+  { href: "/#chi-sono", label: "Chi sono" },
+  { href: "/#pacchetto-lancio", label: "Pacchetto lancio" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contatti", label: "Contatti" },
 ];
 
 export default function Header() {
@@ -19,9 +20,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-black/5">
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-xl">
+        <Link href="/" className="text-xl">
           <Logo />
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-wide uppercase">
           {NAV_LINKS.map((link) => (
@@ -35,12 +36,12 @@ export default function Header() {
           ))}
         </nav>
 
-        <a
-          href="#contatti"
+        <Link
+          href="/#contatti"
           className="hidden md:inline-flex items-center rounded-full bg-pink px-6 py-2.5 text-sm font-medium uppercase tracking-wide text-white hover:bg-pink-dark transition-colors"
         >
           Lavora con me
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -66,13 +67,13 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contatti"
+          <Link
+            href="/#contatti"
             className="mt-2 inline-flex w-fit items-center rounded-full bg-pink px-6 py-2.5 font-medium text-white"
             onClick={() => setOpen(false)}
           >
             Lavora con me
-          </a>
+          </Link>
         </nav>
       )}
     </header>
