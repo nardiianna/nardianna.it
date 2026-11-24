@@ -27,6 +27,15 @@ export const PROJECTS: Project[] = [
     tags: ["WordPress", "Elementor", "Dominio e hosting", "Animazioni"],
   },
   {
+    label: "gestionale.nardianna.it",
+    title: "App di prenotazione",
+    description:
+      "App su misura per prendere appuntamenti online: ogni attività ha la sua pagina di prenotazione con logo e colori, e gestisce agenda, clienti e promemoria da un'unica app. La usano un centro estetico e un centro sportivo.",
+    href: "https://gestionale.nardianna.it/beauty-boutique/prenota",
+    image: "/images/project-gestionale.png",
+    tags: ["Web app su misura", "Prenotazioni online", "Agenda", "Promemoria"],
+  },
+  {
     label: "nardifederico.it",
     title: "Sito portfolio",
     description:
