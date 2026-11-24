@@ -53,6 +53,14 @@ export default function PrivacyPage() {
           consenso, i dati di navigazione possono essere usati per mostrarti
           annunci pertinenti su Google in campagne future (remarketing).
         </p>
+        <p>
+          <strong>Pubblicità su Facebook e Instagram (Meta Pixel):</strong>{" "}
+          con il tuo consenso, uso il pixel di Meta per misurare i risultati
+          delle mie inserzioni su Facebook e Instagram (ad esempio quante
+          persone mi contattano dopo averle viste) e per mostrare annunci
+          pertinenti a chi ha già visitato il sito. I dati sono trattati da
+          Meta Platforms Ireland Ltd.
+        </p>
       </section>
 
       <section className="mt-10 space-y-4">
@@ -65,7 +73,7 @@ export default function PrivacyPage() {
         </p>
         <p>
           <strong>Cookie di analisi e marketing</strong> (Google Analytics,
-          Google Ads) — attivati solo se scegli &quot;Accetta tutti&quot; nel
+          Google Ads, Meta Pixel) — attivati solo se scegli &quot;Accetta tutti&quot; nel
           banner. Puoi rifiutarli senza che questo limiti la navigazione del
           sito.
         </p>

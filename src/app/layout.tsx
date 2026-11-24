@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Poppins } from "next/font/google";
 import Script from "next/script";
 import CookieBanner from "@/components/CookieBanner";
+import MetaPixel from "@/components/MetaPixel";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-JKQNR2F3XH";
@@ -106,6 +107,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </Script>
         {children}
         <CookieBanner />
+        <MetaPixel />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackMeta } from "@/lib/metaPixel";
 
 export default function ContactForm() {
   const router = useRouter();
@@ -34,6 +35,7 @@ export default function ContactForm() {
         throw new Error(data.error ?? "Invio non riuscito.");
       }
 
+      trackMeta("Lead");
       router.push("/grazie");
     } catch {
       setStatus("error");
